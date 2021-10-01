@@ -1,0 +1,42 @@
+// app global css in SCSS form
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --green: rgb(25, 211, 0);
+  --light-green: rgb(0, 255, 13);
+  --black: rgb(39, 39, 39);
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.1s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 599px) {
+  html {
+    font-size: 50%;
+  }
+}
